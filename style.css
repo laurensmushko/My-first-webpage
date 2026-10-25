@@ -623,6 +623,23 @@ details[open] .toggle {
 }
 
 /* Assignment: portrait and profile buttons in About. */
-.about-photo { display: block; width: min(100%, 320px); height: auto; margin-top: 30px; border-radius: 16px; border: 1px solid var(--line); }
+.about-photo {
+  display: block;
+  width: calc((min(1200px, 100vw - 96px) - 80px) * 0.3902439024);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  object-position: center 35%;
+  margin-top: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+@media (max-width: 900px) {
+  .about-photo { width: calc((100vw - 91px) * 0.3902439024); }
+}
+@media (max-width: 640px) {
+  .about-photo { width: min(100%, 420px); aspect-ratio: 1; }
+}
 .social-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 nav { flex-wrap: wrap; }
