@@ -621,3 +621,8 @@ details[open] .toggle {
     transition: none !important;
   }
 }
+
+/* Assignment: portrait and profile buttons in About. */
+.about-photo { display: block; width: min(100%, 320px); height: auto; margin-top: 30px; border-radius: 16px; border: 1px solid var(--line); }
+.social-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+nav { flex-wrap: wrap; }

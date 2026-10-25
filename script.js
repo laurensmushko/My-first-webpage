@@ -2,7 +2,7 @@
 document.getElementById("year").textContent =
   new Date().getFullYear();
 
-// Show profile.jpg when it is available.
+// Show the profile photo when it is available.
 // Otherwise, keep the initials visible.
 const portrait = document.getElementById("profile-image");
 
@@ -51,7 +51,7 @@ if ("IntersectionObserver" in window) {
     }
   );
 
-  ["about", "experience", "contact"].forEach((id) => {
+  ["about", "experience", "education", "contact"].forEach((id) => {
     observer.observe(document.getElementById(id));
   });
 }
